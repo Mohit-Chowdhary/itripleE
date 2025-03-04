@@ -41,6 +41,9 @@ int main() {
         cout<<"Enter interval"<<endl;
         int a,b;
         cin>>a>>b;
+        if(a>b){
+            printf("Invalid interval!");
+        }
         im.addInterval(a,b);
         im.printIntervals();
         cout<<"End? 0/1";
